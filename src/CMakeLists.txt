@@ -29,7 +29,7 @@
 # Error
 #
 add_library(
-  triton-common-error
+  triton-common-error STATIC
   error.cc
   )
 
@@ -52,7 +52,7 @@ target_link_libraries(triton-common-error PRIVATE common-compile-settings)
 # Logging
 #
 add_library(
-  triton-common-logging
+  triton-common-logging STATIC
   logging.cc
 )
 
@@ -82,7 +82,7 @@ target_link_libraries(triton-common-logging PRIVATE common-compile-settings)
 # Async Work Queue
 #
 add_library(
-  triton-common-async-work-queue
+  triton-common-async-work-queue STATIC
   async_work_queue.cc
   error.cc
   thread_pool.cc
@@ -112,7 +112,7 @@ target_link_libraries(triton-common-async-work-queue
 # Thread Pool
 #
 add_library(
-  triton-common-thread-pool
+  triton-common-thread-pool STATIC
   thread_pool.cc
 )
 
@@ -140,7 +140,7 @@ target_link_libraries(triton-common-thread-pool
 # Table Printer
 #
 add_library(
-  triton-common-table-printer
+  triton-common-table-printer STATIC
   table_printer.cc
 )
 

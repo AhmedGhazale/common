@@ -120,7 +120,7 @@ if(${TRITON_COMMON_ENABLE_PROTOBUF} OR ${TRITON_COMMON_ENABLE_GRPC})
   # Model Config (depends on protobuf & generated .pb.h file)
   #
   add_library(
-    triton-common-model-config
+    triton-common-model-config STATIC
     src/model_config.cc
     )
 
